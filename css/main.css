@@ -457,22 +457,28 @@ html {
 			margin-top: 1px;
 		}
 
+	#reveal .controls .home {
+		font-size: 20px;
+	}
+
+
 	#reveal .controls .left {
-		top: 30px;
+		top: 50px;
 	}
 
 	#reveal .controls .right {
 		left: 60px;
-		top: 30px;
+		top: 50px;
 	}
 
 	#reveal .controls .up {
 		left: 30px;
+		top: 20px;
 	}
 
 	#reveal .controls .down {
 		left: 30px;
-		top: 60px;
+		top: 80px;
 
 	}
 
