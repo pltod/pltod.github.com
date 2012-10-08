@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<title>PLTOD</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<!-- Twitter Bootstrap Styles from http://twitter.github.com/bootstrap/assets/css  -->
+		<link href="../css/bootstrap.css" rel="stylesheet">
+		<link href="../css/bootstrap-responsive.css" rel="stylesheet">
+		<link href="../css/docs.css" rel="stylesheet">
+		<!-- Custom styles -->
+		<link rel="stylesheet" href="../css/index.css">
+		<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+		<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<!-- Le fav and touch icons -->
+		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-144-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-114-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-72-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-57-precomposed.png">
+		<link href='http://fonts.googleapis.com/css?family=Courgette' rel='stylesheet' type='text/css'>
+	</head>
+	<body>
+		<div class="navbar navbar-inverse navbar-fixed-top">
+			<div class="navbar-inner">
+				<div class="container">
+					<a data-target=".nav-collapse" data-toggle="collapse" class="btn btn-navbar"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a>
+					<div class="nav-collapse collapse">
+						<ul class="nav">
+							<li><img id="icon" class="img-circle" src="../img/me_verySmall.jpg">
+							<li class="">
+								<a href="../index.html"><i class="icon-home icon-white"></i> HOME</a>
+							</li>
+							<li class="">
+								<a href="http://twitter.com/pltod"><i class="icon-user icon-white"></i> TWITTER</a>
+							</li>
+							<li class="">
+								<a href="https://github.com/pltod"><i class="icon-file icon-white"></i> GITHUB</a>
+							</li>
+						</ul>
+					</div>
+					<div class="pull-right">
+						<ul class="nav">
+							<li>
+								<a href="../blogMain.html"><i class="icon-zoom-in icon-white"></i> FOCUS: Building Applications with JavaSript Technology Stack</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="span8 offset1">
+					<section id="post">
+						<div class="page-header">
+							<h2>JavaScript and Mobile Applications</h2>
+						</div>
+						<p class="well">
+							I was at DevReach 2012 conference in Sofia, Bulgaria on 4th and 5th of October. DevReach is mostly oriented towards Microsoft’s technologies. 
+							I am with a Java background, currently writing applications with the full JavaScript technology stack. 
+							So my purpose there was to find out how Microsoft has embraced the standard technologies (I will use this term for the three techs - HTML5, CSS3, and JavaScript – till the rest of the post) to build native applications.
+							At the end I saw kind of convergence between web, mobile and desktop development with major role playing, guess who.....JavaScript.
+							<br>
+							<br>
+							Here are some theory and conclusions.
+						</p>
+						<h5 class="alert alert-info">1.	Make a difference between mobile sites and mobile applications</h5>
+						<dl class="well">
+							<dt>
+								Mobile Sites
+							</dt>
+							<dd>
+								Specially designed web sites with responsive design techniques that fit well on any screen sizes. 
+								Central distribution model, run inside browser and cannot work offline, no native look and feel.
+							</dd>
+							<dt>
+								Mobile Applications
+							</dt>
+							<dd>
+								Marketplace distribution model, run as native application with native look and feel in offline mode.
+							</dd>
+						</dl>
+						<span class="label label-warning">Conclusion:</span>
+							Users prefer mobile apps because of the better performance, and native look and feel. 
+							Moreover, they are more willing to pay for something that is downloaded from a marketplace. 
+							<br>
+							Of course, companies want to satisfy these needs.
+						<br>
+						<br>
+						<h5 class="alert alert-info">2.	Be aware about different types of mobile applications</h5>
+						All mobile applications have native look and feel. But how this is achieved is a different story. 
+						There are several types of mobile applications that differ according to the way they are built – for single or multiple platforms at once - and according to the presence of access to system resources.
+						<dl class="well">
+							<dt>
+								Mobile Applications
+							</dt>
+							<dd>
+								Built for many platforms at once with standard technologies, run inside the browser, no access to system resources.
+								Native look and feel achieved with Mobile JavaScript libraries like jQuery Mobile.
+							</dd>
+							<dt>
+								Native Mobile Applications
+							</dt>
+							<dd>
+								Built for single platform, run inside the native container and have access to system resources.
+								Native look and feel achieved with platform's SDK.
+							</dd>
+							<dt>
+								Hybrid Mobile Applications
+							</dt>
+							<dd>
+								Built for many platforms at once with standard technologies. 
+								In the same time they still run inside the native container and have access to system resources.
+							</dd>
+						</dl>
+						<span class="label label-warning">Conclusion:</span>
+						The native mobile applications could be still the best choice but they do not scale from business point of view.
+						Companies cannot afford building and maintaining for several platforms, so they prefer “write once, run anywhere approach”, which is achieved with hybrid applications developed with standard web technologies.
+						<br>
+						<br>
+						<h5 class="alert alert-info">3.	How to develop Hybrid Mobile Applications?</h5>
+						Basically we have to approaches to do it.
+						<dl class="well">
+							<dt>
+								Direct Communication with Native API 
+							</dt>
+							<dd>
+	Leverage the underlying platform directly with the help of direct communication between JavaScript and native platform's SDK (e.g. UIWebView for Apple, WebView for Androind, WebBrowser for Windows)
+							</dd>
+							<dt>
+								Communication with Native API via Abstraction Layer
+							</dt>
+							<dd>
+Abstraction Layer isolates the application from the specifics of the native APIs. 
+Similar application is PhoneGap. It allows you to achieve “write once run anywhere” paradigm. 
+However, one must keep in mind build and packaging phases which also require setting all the tools for particular platform. 
+So if one want to skip these configurations could use web based services like PhoneGap Build by Adobe							</dd>
+						</dl>
+						<h5 class="alert alert-info">4.	The convergence between web, mobile and desktop development</h5>
+As <a href="http://a.shinynew.me/" target="_blank">Burke Holland</a> said on one of the lectures: "The Web is the Platform". 
+There is a trend towards bringing the concept behind hybrid mobile applications to the desktop.
+Industry is completely motivated about cutting development costs and being able targeting platforms that will be new kids on the block in the future.
+Here is what different vendors are doing:
+						<dl class="well">
+							<dt>
+								Microsoft and Windows 8 
+							</dt>
+							<dd>
+WinRT is accessible with standard technologies like JavaScript and their proprietary WinJS API. 
+One could write desktop applications with the standard technology stack. 
+They can be published in Windows Store, downloaded on demand, and used as native desktop application.
+It is very much the same process as the one used for development of mobile applications. 
+							<dt>
+								Google and the Packaged Applications
+							</dt>
+							<dd>
+Packaged Applications by Google have the same intention. 
+Write applications with standard technologies and being able to access the system resources. 
+Until recently these apps were working only in the presence of started Chrome browser, but now this is not a requirement anymore.						
+							</dd>
+<dt>
+								Mozilla and Firefox OS
+							</dt>
+							<dd>
+It allows applications built with standard technologies to access the system resources directly. 
+This is the same as Windows 8 direction and Google Packaged App direction. 
+The difference is that the idea here is not implemented as an afterthought. 
+The OS is built with this idea in mind since the very beginning.						
+							</dd>							
+						</dl>
+							
+
+						<h5 class="alert alert-info">5.	The Moral for the JavaScript Developer</h5>
+						<p class="well">
+What is the moral for a JavaScript developer? <br> Ok, just keep learning JavaScript and know that the technology can be used to write application for any platform out there, using a variety of different approaches. 
+Do not let be confused and defocused by languages like TypeScript,  Dart, Coffescript, or another. 
+If sometimes it is a requirement for you to write in such compiled language do not worry about it. 
+If you have advanced level in JavaScript it will not be that hard for you to get into speed in no time with anything that compiles to JavaScript.							
+						</p>
+						
+						<h5 class="alert alert-info">6.	References</h5>
+Apart from the great lectures at <a href="http://www.devreach.com/" target="_blank">DevReach 2012</a> I found some other nice resources:
+<br><br>						
+<table class="table table-hover">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Resource Name</th>
+                </tr>
+              </thead>
+              <tbody>
+  				<tr>
+                  <td>1</td>
+                  <td><a href="http://econsultancy.com/bg/blog/10357-mobile-sites-vs-apps-which-one-do-i-need-for-my-business" target="_blank">Mobile Sites vs. Mobile Applications</a></td>
+                </tr>              	
+  				<tr>
+                  <td>2</td>
+                  <td><a href="http://wiki.developerforce.com/page/Native,_HTML5,_or_Hybrid:_Understanding_Your_Mobile_Application_Development_Options" target="_blank">Types of Mobile Applications</a></td>
+                </tr>              	
+  				<tr>
+                  <td>3</td>
+                  <td><a href="http://icenium.com/community/blog/icenium-team-blog/2012/06/14/what-is-a-hybrid-mobile-app-" target="_blank">What is Hybrid Mobile Applications</a></td>
+                </tr>              	
+  				<tr>
+                  <td>4</td>
+                  <td><a href="http://msdn.microsoft.com/en-us/windows/apps/br229512.aspx" target="_blank">Windows 8 Store Development Center</a></td>
+                </tr>              	
+                <tr>
+                  <td>5</td>
+                  <td><a href="http://developer.chrome.com/apps/about_apps.html" target="_blank">Chrome Packaged Apps</a></td>
+                </tr>
+                <tr>
+                  <td>6</td>
+                  <td><a href="http://www.mozilla.org/en-US/firefoxos/" target="_blank">Mozilla Firefox OS</a></td>
+                </tr>
+              </tbody>
+            </table>		
+            <br><br><br>				
+</div>			
+</div>
+		</div>
+		<footer>
+			<span class="badge label label-info state offset1" rel="tooltip" data-original-title="1. Built with Twitter Bootstrap. <br>2. Hosted on Github. <br>3. Menu scroll on internal pages by http://imakewebthings.com/.<br>4. Presentations made with lab.hakim.se/reveal-js/.">Credits</span>
+			<p>
+				<b>Site States:</b>
+				<span class="badge label label-success state" rel="tooltip" data-original-title="Site is still under constructon.">Under Constructon</span>
+				<span class="badge label label-important state" rel="tooltip" data-original-title="Just a place for content storing.">+Content</span>
+				<span class="badge label label-important state" rel="tooltip" data-original-title="Content will be searchable and taggable.">+Searchable</span>
+				<span class="badge label label-important state" rel="tooltip" data-original-title="Comments and discussions will be activated.">+Collaborative</span>
+				<span class="badge label label-important state" rel="tooltip" data-original-title="Users will be able to create content.">+Dynamic</span>
+				<span class="badge label label-important state" rel="tooltip" data-original-title="The site will be turned into application with nice look and feel and intuitive user interface">+Application</span>
+			</p>
+		</footer>
+		<!-- Le javascript
+		================================================== -->
+		<!-- Placed at the end of the document so the pages load faster -->
+		<script src="../js/jquery.min.js"></script>
+		<script src="../js/bootstrap.min.js"></script>
+		<script src="../js/index.js"></script>
+	</body>
+</html>

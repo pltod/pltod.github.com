@@ -1,10 +1,5 @@
 $(document).ready(function() {
-	$('#professional').tooltip();
-	$('#tourist').tooltip();
-	$('#father').tooltip();
-	$('#student').tooltip();
-	$('#employee').tooltip();
-	$('#message').tooltip();
 	$('.state').tooltip();
-
+	$('#manifestoCarousel').carousel(0)
+	$('#manifestoCarousel').carousel('pause');
 });
