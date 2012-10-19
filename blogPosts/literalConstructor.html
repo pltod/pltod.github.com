@@ -58,13 +58,60 @@
 				<div class="span8 offset1">
 					<section id="post">
 						<div class="page-header">
-							<h2>Blog Post Title Here</h2>
-							<small>BLOG POST STATE HERE <br />
+							<h2>JavaScript Object Literal vs. Object Constructor</h2>
+							<small>FORTHCOMING <br /> 
 								<a target="_blank" href="https://twitter.com/share" class="twitter-share-button" data-lang="en" data-count="horizontal">Tweet</a>
 								<div class="g-plusone" data-size="medium" data-annotation="inline" data-width="300"></div>
 							</small>							
 						</div>
-						TEXT GOES HERE...
+What are the benefits of using Object literal over the Object constructor notation?
+Here are they:
+1. literal notation is shorter
+
+2. literal notation emphasizes that objects are mutable hashes
+
+3. literal notation does not trigger identifier resolution process -> when using Object constructor JS checks the scope chain if original constructor function is not overridden.
+
+4. literal notation could not receive parameter -> if we pass parameter to Object constructor we could get unexpected behaviour
+
+First two are clear enough. Lets see examples for the last two.
+Example for statement 3.
+Why scope chain is searched in this case?
+Try using Object Constructor:
+var obj1 = new Object();
+console.log(obj1);
+
+Override the Object Constructor like this:
+
+var Object = function () {
+this.prop = "propValue";
+};
+var obj2 = new Object();
+console.log(obj2);
+
+If you check the log, for example in your Chrome browser, you will see that obj1 and obj2 have different prototype. obj2 is created with the new overridden constructor function. The possibility of overriding Object constructor function triggers makes necessary scope chain checking, thus, decrease the performance of our programs.
+
+Example for statement 4.
+
+As you can see bellow, using new Object with parameter of different type causes delegation to the appropriate for this type constructor function, which later could lead to unexpected behaviour.
+
+var o = new Object();  // an empty object
+console.log(o.constructor === Object); // true
+
+
+var o = new Object(1);  // a number object
+console.log(o.constructor === Number); // true
+
+
+var o = new Object("I am a string"); // a string object
+console.log(o.constructor === String); // true
+console.log(typeof o.substring); // "function"
+
+References:
+
+JavaScript Patterns by Stoyan Stefanov
+
+http://www.amazon.com/JavaScript-Patterns-Stoyan-Stefanov/dp/0596806752/ref=sr_1_1?ie=UTF8&qid=1321443665&sr=8-1
 						
 					</section>
 				</div>			
