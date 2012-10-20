@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<title>@PLTOD</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<!-- Twitter Bootstrap Styles from http://twitter.github.com/bootstrap/assets/css  -->
+		<link href="./css/bootstrap.css" rel="stylesheet">
+		<link href="./css/bootstrap-responsive.css" rel="stylesheet">
+		<link href="./css/docs.css" rel="stylesheet">
+		<!-- Custom styles -->
+		<link rel="stylesheet" href="./css/index.css">
+		<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+		<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<!-- Le fav and touch icons -->
+		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-144-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-114-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-72-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-57-precomposed.png">
+		<link href='http://fonts.googleapis.com/css?family=Courgette' rel='stylesheet' type='text/css'>
+	</head>
+	<body data-target=".bs-docs-sidebar" data-spy="scroll">
+		<div class="navbar navbar-inverse navbar-fixed-top">
+			<div class="navbar-inner">
+				<div class="container">
+					<a data-target=".nav-collapse" data-toggle="collapse" class="btn btn-navbar"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a>
+					<div class="nav-collapse collapse">
+						<ul class="nav">
+							<li><img id="icon" class="img-circle" src="./img/me_verySmall.jpg">
+							</li>
+							<li class="">
+								<a href="index.html"><i class="icon-home icon-white"></i> HOME</a>
+							</li>
+							<li class="">
+								<a target="_blank" http://twitter.com/pltod"><i class="icon-user icon-white"></i> TWITTER</a>
+							</li>
+							<li class="">
+								<a target="_blank" href="https://github.com/pltod"><i class="icon-file icon-white"></i> GITHUB</a>
+							</li>
+						</ul>
+					</div>
+					<div class="pull-right">
+						<ul class="nav">
+							<li>
+								<a href="blogMain.html"><i class="icon-zoom-in icon-white"></i> FOCUS: Building Applications with JavaScript Technology Stack</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<!-- Docs nav
+			================================================== -->
+			<div class="row">
+				<div class="span3 bs-docs-sidebar">
+					<ul class="nav nav-list bs-docs-sidenav affix">
+						<li>
+							<a href="#disclaimer"><i class="icon-chevron-right"></i> 0. Summary And Disclaimer</a>
+						</li>
+							<li class="label label-warning">
+			                      JAVASCRIPT LANGUAGE
+							</li>
+								<li>
+									<a href="#chapter1"><i class="icon-chevron-right"></i> 1. ECMAScript Core Theory</a>
+								</li>
+								<li>
+									<a href="#chapter2"><i class="icon-chevron-right"></i> 2. Patterns</a>
+								</li>
+						<li class="label label-warning">
+							CLIENT-SIDE
+						</li>
+						<li>
+							<a href="#chapter3"><i class="icon-chevron-right"></i> 3. DOM Manipulation</a>
+						</li>
+						<li>
+							<a href="#chapter4"><i class="icon-chevron-right"></i> 4. Code Organization</a>
+						</li>
+						<li>
+							<a href="#chapter5"><i class="icon-chevron-right"></i> 5. Application Architectures</a>
+						</li>
+						<li class="label label-warning">
+							SERVER-SIDE
+						</li>
+						<li>
+							<a href="#chapter6"><i class="icon-chevron-right"></i> 6. Node.js</a>
+						</li>
+						<li>
+							<a href="#chapter7"><i class="icon-chevron-right"></i> 7. Web App Frameworks</a>
+						</li>
+						<li class="label label-warning">
+							DATABASE
+						</li>
+						<li>
+							<a href="#chapter8"><i class="icon-chevron-right"></i> 8. NoSQL Databases</a>
+						</li>
+						<li>
+							<a href="#chapter9"><i class="icon-chevron-right"></i> 9. Object Modeling</a>
+						</li>
+						<li class="label label-warning">
+							OTHER
+						</li>
+						<li>
+							<a href="#chapter10"><i class="icon-chevron-right"></i> 10. Non-Functional Aspects</a>
+						</li>
+						<li>
+							<a href="#chapter11"><i class="icon-chevron-right"></i> 11. Development Process</a>
+						</li>
+						<li>
+							<a href="#chapter12"><i class="icon-chevron-right"></i> 12. Mobile and Desktop Apps</a>
+						</li>
+						<li>
+							<a href="#chapter13"><i class="icon-chevron-right"></i> 13. WebStandards</a>
+						</li>
+					</ul>
+				</div>
+				<div class="span9">
+					<!-- Class Summary
+					================================================== -->
+					<section id="disclaimer">
+						<div class="page-header">
+							<h2>Building Applications With JavaScript Technology Stack</h2>
+							<small>Last Update: Saturday, October 20, 2012<br /> 
+								<a target="_blank" href="https://twitter.com/share" class="twitter-share-button" data-lang="en" data-count="horizontal">Tweet</a>
+								<div class="g-plusone" data-size="medium" data-annotation="inline" data-width="300"></div>
+							</small>							
+						</div>
+						<div class="well">
+							Lately, I am interested in learning how to develop applications with JavaScript-only technology stack. 
+							Back in 2011 I wrote <a href="http://pltod.github.com/c1WhyJS.html">why I would like to spend time on JavaScript</a>.
+							This is actually kind of ordered list with links to other people thoughts and why they invest time in JavaScript. 
+							So, these were enough for me and I was in. But when I started I found that the language, or more precisely 
+							the ecosystem around it, is full of new technologies, libraries, frameworks, standards etc. It was kind of a jungle to me. 		
+							<br/><br/>
+							I know that there are many books out there that cover the JavaScript language, or particular library or framework. 
+							But I wanted to have something like a map that is more oriented towards the development process. 
+							For example, I needed to know which technology, framework, aspect, or technique fits where in the development process, 
+							or in which part of a layered software architecture.
+							<br/><br/>
+							So I allowed myself to create a sample content (categories or chapters if you want) that will help me organize my knowledge. 
+							There are a lot better resources on the web about this kind of stuff. But I am using this classification since it fits well my needs. 
+							Each category has a summary with short explanation what it is all about and links to resources that 
+							I found most useful for understanding particular topic. As part of each category I am going to publish more detailed blog posts 
+							for more concrete stuff. 
+							These blog posts are often heavily influenced by materials on the web or sometimes evolved as a result of my practice with related technologies.
+							<br/><br/>
+							As you can see this is a work in progress. However, my wish is to cover most of the things in a period of 1 year. 
+							So I plan to update this content very often. 
+							<br/><br/>
+							If you like you could <a href="http://twitter.com/pltod">follow me on twitter</a> to get notifications for the latest updates.
+						</div>
+					</section>
+					<section id="chapter1">
+						<div class="page-header">
+							<h2>Chapter 1. EcmaScript Core Theory</h2>
+						</div>
+						<div class="well">
+							
+							<a href="http://pltod.github.com/c2CoreTheory.html">Find here a presentation about core theory.</a>
+							It will be integrated in this site soon and related blog posts will be added.
+						</div>
+					</section>
+					<section id="chapter2">
+						<div class="page-header">
+							<h2>Chapter 2. Patterns</h2>
+						</div>
+						<div class="well">
+							<a href="http://pltod.github.com/c3Patterns.html">Find here a presentation about patterns.</a>
+						</div>
+						<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+					</section>					
+					<section id="chapter11">
+						<div class="page-header">
+							<h2>Chapter 12. Mobile and Desktop Apps</h2>
+						</div>
+						<div class="well">
+							<a href="blogPosts/mobileDev.html">JavaScript and Mobile Applications</a>
+						</div>
+					</section>
+					<section id="chapter12">
+						<div class="page-header">
+							<h2>Chapter 13. Web Standards</h2>
+						</div>
+						<div class="well">
+							TODO
+						</div>
+					</section>
+					
+				</div>
+			</div>
+		</div>
+		<footer>
+			<span class="badge label label-info state offset1" rel="tooltip" data-original-title="1. Built with Twitter Bootstrap. <br>2. Hosted on Github. <br>3. Menu scroll on internal pages by http://imakewebthings.com/.<br>4. Presentations made with lab.hakim.se/reveal-js/.">Credits</span>
+			<p>
+				<b>Site States:</b>
+				<span class="badge label label-success state" rel="tooltip" data-original-title="Site is still under constructon.">Under Constructon</span>
+				<span class="badge label label-important state" rel="tooltip" data-original-title="Just a place for content storing.">+Content</span>
+				<span class="badge label label-important state" rel="tooltip" data-original-title="Content will be searchable and taggable.">+Searchable</span>
+				<span class="badge label label-important state" rel="tooltip" data-original-title="Comments and discussions will be activated.">+Collaborative</span>
+				<span class="badge label label-important state" rel="tooltip" data-original-title="Users will be able to create content.">+Dynamic</span>
+				<span class="badge label label-important state" rel="tooltip" data-original-title="The site will be turned into application with nice look and feel and intuitive user interface">+Application</span>
+			</p>
+		</footer>
+
+		<!-- Le javascript
+		================================================== -->
+		<!-- Placed at the end of the document so the pages load faster -->
+		<script src="./js/jquery.min.js"></script>
+		<script src="./js/bootstrap.min.js"></script>
+		<script src="./js/prettify.js"></script>
+		<script src="./js/index.js"></script>
+	</body>
+</html>
