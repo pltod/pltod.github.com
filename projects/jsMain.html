@@ -8,11 +8,11 @@
 		<meta name="description" content="">
 		<meta name="author" content="">
 		<!-- Twitter Bootstrap Styles from http://twitter.github.com/bootstrap/assets/css  -->
-		<link href="./css/bootstrap.css" rel="stylesheet">
-		<link href="./css/bootstrap-responsive.css" rel="stylesheet">
-		<link href="./css/docs.css" rel="stylesheet">
+		<link href="../css/bootstrap.css" rel="stylesheet">
+		<link href="../css/bootstrap-responsive.css" rel="stylesheet">
+		<link href="../css/docs.css" rel="stylesheet">
 		<!-- Custom styles -->
-		<link rel="stylesheet" href="./css/index.css">
+		<link rel="stylesheet" href="../css/index.css">
 		<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
 		<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -34,7 +34,7 @@
 							<li><img id="icon" class="img-circle" src="./img/me_verySmall.jpg">
 							</li>
 							<li class="">
-								<a href="index.html"><i class="icon-home icon-white"></i> HOME</a>
+								<a href="../index.html"><i class="icon-home icon-white"></i> HOME</a>
 							</li>
 							<li class="">
 								<a target="_blank" http://twitter.com/pltod"><i class="icon-user icon-white"></i> TWITTER</a>
@@ -47,7 +47,7 @@
 					<div class="pull-right">
 						<ul class="nav">
 							<li>
-								<a href="blogMain.html"><i class="icon-zoom-in icon-white"></i> FOCUS: Building Applications with JavaScript Technology Stack</a>
+								<a href="jsMain.html"><i class="icon-zoom-in icon-white"></i> FOCUS: Building Applications with JavaScript Technology Stack</a>
 							</li>
 						</ul>
 					</div>
@@ -125,17 +125,19 @@
 					<section id="disclaimer">
 						<div class="page-header">
 							<h2>Building Applications With JavaScript Technology Stack</h2>
-							<small>Last Update: Saturday, October 20, 2012<br /> 
+							<small>Last Update: Tuesday, October 23, 2012<br /> 
 								<a target="_blank" href="https://twitter.com/share" class="twitter-share-button" data-lang="en" data-count="horizontal">Tweet</a>
 								<div class="g-plusone" data-size="medium" data-annotation="inline" data-width="300"></div>
 							</small>							
 						</div>
 						<div class="well">
-							Lately, I am interested in learning how to develop applications with JavaScript-only technology stack. 
-							Back in 2011 I wrote <a href="http://pltod.github.com/c1WhyJS.html">why I would like to spend time on JavaScript</a>.
-							This is actually kind of ordered list with links to other people thoughts and why they invest time in JavaScript. 
-							So, these were enough for me and I was in. But when I started I found that the language, or more precisely 
-							the ecosystem around it, is full of new technologies, libraries, frameworks, standards etc. It was kind of a jungle to me. 		
+							My desire to learn JavaScript in depth dates back to 2007.
+							Unfortunately for one reason or another I did not have the time to do it until 2012. 
+							Back in 2011 I wrote <a href="http://pltod.github.com/c1WhyJS.html">why I would like to spend time on JavaScript</a>. 
+							And now my focus is fully on learning it. I hope that this delay is for good. 
+							Now I see an ecosystem around JavaScript that is really impressive and more importantly 
+							stable. However the availability of so many new technologies, libraries, frameworks, and 
+							standards hinders the learning process.							
 							<br/><br/>
 							I know that there are many books out there that cover the JavaScript language, or particular library or framework. 
 							But I wanted to have something like a map that is more oriented towards the development process. 
@@ -145,10 +147,9 @@
 							So I allowed myself to create a sample content (categories or chapters if you want) that will help me organize my knowledge. 
 							There are a lot better resources on the web about this kind of stuff. But I am using this classification since it fits well my needs. 
 							Each category has a summary with short explanation what it is all about and links to resources that 
-							I found most useful for understanding particular topic. As part of each category I am going to publish more detailed blog posts 
-							for more concrete stuff. 
-							These blog posts are often heavily influenced by materials on the web or sometimes evolved as a result of my practice with related technologies.
-							<br/><br/>
+							I found most useful for understanding particular topic. During the time I am going to add detailed blog 
+							posts associated with one of these categories. Some of these posts will have presentation slides as well. 
+							These blog posts are often heavily influenced by materials on the web or sometimes evolved as a result of my practice.							<br/><br/>
 							As you can see this is a work in progress. However, my wish is to cover most of the things in a period of 1 year. 
 							So I plan to update this content very often. 
 							<br/><br/>
@@ -160,9 +161,44 @@
 							<h2>Chapter 1. EcmaScript Core Theory</h2>
 						</div>
 						<div class="well">
-							
-							<a href="http://pltod.github.com/c2CoreTheory.html">Find here a presentation about core theory.</a>
-							It will be integrated in this site soon and related blog posts will be added.
+							Usually most of us (at least me) prefer to work with technologies that give us immediate feedback of what we are doing. 
+							JavaScript is such technology – we do something and see results. 
+							Moreover, we could take a library or two and make some things on the web that are pretty impressive without having much knowledge about the language.
+							<br/><br/>
+							However I think that the fun is much more when one knows the specifics. 
+							Learning EcmaScript (the standard which JavaScript language implements) core theory is not that easy. 
+							But if you are lucky enough you will find out  <a target=”_blank” href='http://dmitrysoshnikov.com/'> the blog of Dmitry Soshnikov</a> and the things will start changing. 
+							He explains the most important things in EcmaScript version 3 and version 5 of the standard in an amazingly understandable way. 
+							of the standard.
+						</div> 
+							If we decide to learn core theory we must learn about things like:						
+						<ul>
+							<li>context theory</li>
+							<li>context lifecycle vs. function lifecycle</li>
+							<li>identifiers vs. properties </li>
+							<li>hoisting </li>
+							<li>dynamic scopes </li>
+							<li>function creation algorithm </li>
+							<li>closures </li>
+							<li>prototype chain </li>
+							<li>function declaration vs. function expression </li>
+						</ul>
+						<div class="well">
+							My JavaScript language insights came after I have read his posts as well as 
+							some other nice posts by <a target= "_blank" href="http://kangax.github.com/">Juriy Zaytsev</a> 
+							and <a target= "_blank" href="http://javascriptweblog.wordpress.com/">Angus Croll</a> 
+							So my purpose is not to rewrite the explanation of all these concepts from scratch.
+							<br/><br/>
+							Instead I have prepared a presentation, included some more materials, structured the flow a little bit differently, and added 
+							some tweaks from my perspective.<a target= "_blank" href="http://pltod.github.com/c2CoreTheory.html"> In this presentation </a> 
+							(and this is also valid for all my presentations and blog posts) I am trying to not be so scientific. I don’t know is this a good approach but 
+							I am trying to post things that could be understood even by non-programmers. I am trying to simplify the stuff and to not use more than one 
+							term for the same thing. So I have wrapped the presentation of the core theory concepts in a CRUD framework. With other words the presentation 
+							flow is based on create, read, update and delete operations. If I am not wrong the programming languages are kind of in-memory CRUD operations 
+							so presenting terms along with each operation sounds natural to me.
+							<br/><br/>
+							Finally I would like to mention that I see some concepts like history of EcmaScript and 
+							EcmaScript versions, JavaScript Engines and JavaScript Dialects as prerequisites for learning JavaScript Core Theory.
 						</div>
 					</section>
 					<section id="chapter2">
@@ -173,7 +209,54 @@
 							<a href="http://pltod.github.com/c3Patterns.html">Find here a presentation about patterns.</a>
 						</div>
 						<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+					</section>	
+					<section id="chapter3">
+						<div class="page-header">
+							<h2>Chapter 3. DOM Manipulation</h2>
+						</div>
+						<div class="well">
+							TODO
+						</div>
+						<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+					</section>	
+					<section id="chapter4">
+						<div class="page-header">
+							<h2>Chapter 4. Code Organization</h2>
+						</div>
+						<div class="well">
+							The software and the way we build it heavily depend on what the business needs.  
+							So if you need to understand why we build software in particular manner, just try to understand what are business needs. 
+							In the context of web based applications (including mobile applications) the organizations want more and more 
+							desktop-like software with very intuitive and dynamic user interfaces and huge reactivity. 
+							Sometimes responsive features are a must in order to be able to deliver mobile solutions with fewer costs.
+							<br/><br/>
+							You can read the two articles by Paul Hammant 
+							which summarize very well <a href="http://paulhammant.com/2012/02/06/previous-web-architectures/"> the history of web application architectures</a> 
+							and <a href="http://paulhammant.com/2012/02/06/webapp-model-quandary/">the current trends in web application architectures</a>.
+							<br/><br/>
+							The consequences for the web application developer are that he must deal with a huge amount of client-side code.
+							And all kind of questions arise. But the most important is: 
+							How to organize the huge amount of client side code in a more structured way?  
+							And the answer is...<a href="http://addyosmani.com/resources/essentialjsdesignpatterns/book/#detailmvcmvp">MV* family of patterns</a>.
+							<br/><br/>
+							The community responded immediately with a huge amount of client-side libraries and frameworks. They strive to help us apply best practices out of the box. 
+							<a href="http://coding.smashingmagazine.com/2012/07/27/journey-through-the-javascript-mvc-jungle/">Have a journey through the jungle of these libraries and frameworks</a> 
+							and <a href="http://blog.stevensanderson.com/2012/08/01/rich-javascript-applications-the-seven-frameworks-throne-of-js-2012/">read a nice classification and 
+							comparison between the most popular of them</a>. If you need to be aware about the available libraries and frameworks and have a hands 
+							on experience with them just check out <a href="http://addyosmani.github.com/todomvc/">TodoMVC project</a>.
+						</div>
+						<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 					</section>					
+					<section id="chapter5">
+						<div class="page-header">
+							<h2>Chapter 5. Application Architectures</h2>
+						</div>
+						<div class="well">
+							TODO
+						</div>
+						<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+					</section>					
+
 					<section id="chapter11">
 						<div class="page-header">
 							<h2>Chapter 12. Mobile and Desktop Apps</h2>
@@ -210,9 +293,9 @@
 		<!-- Le javascript
 		================================================== -->
 		<!-- Placed at the end of the document so the pages load faster -->
-		<script src="./js/jquery.min.js"></script>
-		<script src="./js/bootstrap.min.js"></script>
-		<script src="./js/prettify.js"></script>
-		<script src="./js/index.js"></script>
+		<script src="../js/jquery.min.js"></script>
+		<script src="../js/bootstrap.min.js"></script>
+		<script src="../js/prettify.js"></script>
+		<script src="../js/index.js"></script>
 	</body>
 </html>
