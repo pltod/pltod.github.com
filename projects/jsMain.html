@@ -37,7 +37,7 @@
 								<a href="../index.html"><i class="icon-home icon-white"></i> HOME</a>
 							</li>
 							<li class="">
-								<a target="_blank" http://twitter.com/pltod"><i class="icon-user icon-white"></i> TWITTER</a>
+								<a target="_blank" href="http://twitter.com/pltod"><i class="icon-user icon-white"></i> TWITTER</a>
 							</li>
 							<li class="">
 								<a target="_blank" href="https://github.com/pltod"><i class="icon-file icon-white"></i> GITHUB</a>
@@ -125,7 +125,7 @@
 					<section id="disclaimer">
 						<div class="page-header">
 							<h2>Building Applications With JavaScript Technology Stack</h2>
-							<small>Last Update: Tuesday, October 23, 2012<br /> 
+							<small>Last Update: Thursday, October 25, 2012<br /> 
 								<a target="_blank" href="https://twitter.com/share" class="twitter-share-button" data-lang="en" data-count="horizontal">Tweet</a>
 								<div class="g-plusone" data-size="medium" data-annotation="inline" data-width="300"></div>
 							</small>							
@@ -140,16 +140,16 @@
 							standards hinders the learning process.							
 							<br/><br/>
 							I know that there are many books out there that cover the JavaScript language, or particular library or framework. 
-							But I wanted to have something like a map that is more oriented towards the development process. 
-							For example, I needed to know which technology, framework, aspect, or technique fits where in the development process, 
+							But I wanted to have something like a map that is more oriented towards the layers of software architecture and the development process. 
+							I needed to know which technology, framework, aspect, or technique fits where in the development process, 
 							or in which part of a layered software architecture.
 							<br/><br/>
-							So I allowed myself to create a sample content (categories or chapters if you want) that will help me organize my knowledge. 
-							There are a lot better resources on the web about this kind of stuff. But I am using this classification since it fits well my needs. 
-							Each category has a summary with short explanation what it is all about and links to resources that 
-							I found most useful for understanding particular topic. During the time I am going to add detailed blog 
-							posts associated with one of these categories. Some of these posts will have presentation slides as well. 
-							These blog posts are often heavily influenced by materials on the web or sometimes evolved as a result of my practice.							<br/><br/>
+							So I allowed myself to create a structure that helps me organize my knowledge. 
+							Each category in it has a brief discussion over the related theory and links to resources that 
+							I found most useful for understanding particular topic. During the time I am going to blog about particulr topics in detail 
+							and I will put links to these entries in the corresponding category. Some of these posts will have presentation slides as well. 
+							These blog posts will probably be heavily influenced by other materials on the web or sometimes will be a direct insight as a result of my development.			
+							<br/><br/>
 							As you can see this is a work in progress. However, my wish is to cover most of the things in a period of 1 year. 
 							So I plan to update this content very often. 
 							<br/><br/>
@@ -205,7 +205,7 @@
 							<h2>Chapter 2. Patterns</h2>
 						</div>
 						<div class="well">
-							<a href="http://pltod.github.com/c3Patterns.html">Find here a presentation about patterns.</a>
+							<a target="_blank" href="http://pltod.github.com/c3Patterns.html">Find here a presentation about patterns.</a>
 						</div>
 						<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 					</section>	
@@ -222,6 +222,7 @@
 						<div class="page-header">
 							<h2>Chapter 4. Code Organization</h2>
 						</div>
+						<h5 class="alert alert-info">1.	Why we end up having fat clients?</h5>
 						<div class="well">
 							The software and the way we build it heavily depend on what the business needs.  
 							So if you need to understand why we build software in particular manner, just try to understand what are business needs. 
@@ -231,29 +232,132 @@
 							<br/><br/>
 							You can read the two articles by Paul Hammant 
 							which summarize very well <a href="http://paulhammant.com/2012/02/06/previous-web-architectures/"> the history of web application architectures</a> 
-							and <a href="http://paulhammant.com/2012/02/06/webapp-model-quandary/">the current trends in web application architectures</a>.
-							<br/><br/>
+							and <a target="_blank" href="http://paulhammant.com/2012/02/06/webapp-model-quandary/">the current trends in web application architectures</a>.
+						</div>
+						<h5 class="alert alert-info">2.	How to approach the fat client development?</h5>
+						<div class="well">
 							The consequences for the web application developer are that he must deal with a huge amount of client-side code.
 							And all kind of questions arise. But the most important is: 
 							How to organize the huge amount of client side code in a more structured way?  
 							And the answer is...<a href="http://addyosmani.com/resources/essentialjsdesignpatterns/book/#detailmvcmvp">MV* family of patterns</a>.
 							<br/><br/>
 							The community responded immediately with a huge amount of client-side libraries and frameworks. They strive to help us apply best practices out of the box. 
-							<a href="http://coding.smashingmagazine.com/2012/07/27/journey-through-the-javascript-mvc-jungle/">Have a journey through the jungle of these libraries and frameworks</a> 
-							and <a href="http://blog.stevensanderson.com/2012/08/01/rich-javascript-applications-the-seven-frameworks-throne-of-js-2012/">read a nice classification and 
+							<a target="_blank" href="http://coding.smashingmagazine.com/2012/07/27/journey-through-the-javascript-mvc-jungle/">Have a journey through the jungle of these libraries and frameworks</a> 
+							and <a target="_blank" href="http://blog.stevensanderson.com/2012/08/01/rich-javascript-applications-the-seven-frameworks-throne-of-js-2012/">read a nice classification and 
 							comparison between the most popular of them</a>. If you need to be aware about the available libraries and frameworks and have a hands 
 							on experience with them just check out <a href="http://addyosmani.github.com/todomvc/">TodoMVC project</a>.
 						</div>
-						<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 					</section>					
 					<section id="chapter5">
 						<div class="page-header">
 							<h2>Chapter 5. Application Architectures</h2>
 						</div>
+						<h5 class="alert alert-info">1.	Libraries and Frameworks (Application Architectures)</h5>
 						<div class="well">
-							TODO
+							Have you ever thought about the differences between library and framework?
+							<br/><br/> 
+							Usually I use them interchangeably although this probably is completely wrong. 
+							In the context of JavaScript landscape I really like the definition that 
+							Steven Sanderson gave in <a target="_blank" href="http://blog.stevensanderson.com/2012/08/01/rich-javascript-applications-the-seven-frameworks-throne-of-js-2012/">his blog post about the seven top JavaScript frameworks/libraries for single-page and rich JavaScript applications</a>.
+							I am citing:<br/><br/> 
+							<dt>
+								Library
+							</dt>
+							<dd>
+								Slots into your existing architecture and add specific functionality
+							</dd>
+							<dt>
+								Framework
+							</dt>
+							<dd>
+								Give you an architecture (file structure, etc.) that you are meant to follow and, if you do, are intended to handle all common requirements
+							</dd>
 						</div>
-						<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+						<div class="well">
+							These definitions are an amazing starting point if you need to understand all those libraries and frameworks out there. 
+							<br/><br/>
+							Tell me more about the libraries?<br/>
+							When you are taking an architectural decision take into account that most of the libraries are just a bunch of convenient 
+							classes, useful functionality, and often built-in templating mechanism. You are going to need them for sure if you want to 
+							structure your code (in MV* style) and optimize some operations (like let’s say making server requests in a REST manner). 
+							Of course, if you are professional JavaScript developer it is easy to roll out your own library for this kind of stuff. 
+							However it seems that libraries like <a target="_blank" href="http://backbonejs.org/">Backbone</a> are close to perfection and in most of the cases it is completely 
+							unnecessary to reinvent the wheel.
+							<br/><br/>	
+							What about the frameworks?<br/> 
+							As it is mentioned in the Steven’s definition above they give you extra features that you also 
+							going to need for sure like file structure, view management, and sort of architectural guidelines that you must follow.						
+						</div>
+						<div class="well">
+						So we end up with several options here:<br/><br/> 
+							<dt>
+								Backbone Style MV* + Architecture on top of it
+							</dt>
+							<dd>
+								To achieve complete application architecure with Backbone we have a lot of options like
+								<a target="_blank" href="https://github.com/tbranyen/backbone-boilerplate">Boilerplate</a> + <a target="_blank" href="http://tbranyen.github.com/backbone.layoutmanager/">LayoutManager</a>, 
+								<a target="_blank" href="http://marionettejs.com/">Marionette</a>, 
+								<a target="_blank" href="https://github.com/chaplinjs/chaplin">Chaplin</a>, and 
+									<a target="_blank" href="http://walmartlabs.github.com/thorax/">Thorax</a> 
+							</dd>
+							<dt>
+								Another MV* Style + Architecture on top of it
+							</dt>
+							<dd>
+								We have different style MV* libraries like MVVM Knockout and probably some architectures on top of them. 
+								For more libraries check out <a target="_blank" href="http://addyosmani.github.com/todomvc/">TodoMVC project</a>
+							</dd>	
+							<dt>
+								Full Framework (Application Architecture)
+							</dt>
+							<dd>
+								The third option is to use full application architectures like <a target="_blank" href="http://emberjs.com/">Ember</a> or <a target="_blank" href="http://angularjs.org">AngularJS</a>
+							</dd>								
+						</div>
+						<h5 class="alert alert-info">2.	Library or Framework (Application Architectures)?</h5>
+						<div class="well">
+						Yes, there are a lot of choices. Which is the best one? Probably this question has no answer. 
+						Personally my reasoning is the following. Generally, it is safer to choose Backbone and postpone your more 
+						concrete architectural decisions until you do some prototyping and development. Then you can roll out your own 
+						layer on top of Backbone or choose one of the existing. 
+						</div>
+						<div class="well">
+						Going with a framework is more risky because:
+						<br/><br/>
+						<i class="icon-ok"></i> It is not lean…..you make some commitments in advance that could turned out to be wrong later.<br/>
+						<i class="icon-ok"></i> You are not flexible enough to make changes on the fly. <br/>
+						<i class="icon-ok"></i> You take a decision for several aspects simultaneously. For example I don’t think that one 
+						should decide about file structure in the same time when he wants to decide about its preferred MV* style – which exactly happens when 
+						going with a framework. For me file structure, build operations and workflows are 
+						part of the development process and require another round of picking up solutions 
+						like <a target="_blank" href="http://gruntjs.com/">Grunt</a>, <a target="_blank" href="http://yeoman.io/">Yeoman</a>, <a target="_blank" href="http://brunch.io/">Brunch</a>, etc. (<a target="_blank" href="http://pltod.github.com/projects/jsMain.html#chapter11">see Chapter 11, Development Process</a>) <br/>
+						</div>
+						<h5 class="alert alert-info">3.	JavaScript Architectures In Theory</h5>
+						<div class="well">
+							Sooner or later you will want to dig deeper into particular library or framework. 
+							This is possible since most of them are easily accessible on Github. 
+							If you want to grasp them easier make sure you have read the theory about JavaScript architectures:
+							<br/><br/>
+<i class="icon-hand-right"></i> Nicolas Zakas: Scalable JavaScript Application Architecture (<a target="_blank" href="http://www.youtube.com/watch?v=vXjVFPosQHw">Video</a>
+and <a target="_blank" href="http://www.slideshare.net/nzakas/scalable-javascript-application-architecture">Slides</a>)
+<br/><br/>
+<i class="icon-hand-right"></i> Addy Osmani: Patterns for Large-Scale JavaScript Application Architecture (<a target="_blank" href="http://addyosmani.com/largescalejavascript/">Online Book</a>
+and <a target="_blank" href="http://addyosmani.github.com/aura/">Backbone Aura - Application architecture that applies the concepts by Zakas and by Osmani</a>)
+
+						</div>
+						<h5 class="alert alert-info">4.	Server-agnosticism</h5>
+						<div class="well">
+Again Steven Sanderson is in the game. He used this term in 
+<a target="_blank" href="http://blog.stevensanderson.com/2012/08/01/rich-javascript-applications-the-seven-frameworks-throne-of-js-2012/">his comparison of top 7 libraries and frameworks</a>.
+The important note here is that these application libraries and frameworks (with some exceptions) does not have any explicit demands on server. You could use whatever server-side technology you want and keep its respective architecture practices.
+We were talking about application architectures in this chapter. But is there any server-side involved in all these talks? It is counter intuitive but the proper answer is ‘NO’. We were talking about client-side frameworks most of the time. Respectively the patterns and practices are applicable for client side code. 
+<br/><br/>
+Some of the techniques involve the server in one way or another. This is especially true when we talk about routing, module and template loading. 
+If we go with Node.js and fully JavaScript based stack definitely all of the concepts are transferable to the server-side code. 
+Similar full stack JavaScript framework is <a target="_blank" href="http://www.meteor.com/">Meteor</a>, which involves not only the server (augmented Node.js) but also the database (mongoDB). 
+Personally I believe that this framework has a huge potential and will gain significant “market share” in the near future. 
+						</div>
+
 					</section>					
 
 					<section id="chapter11">
