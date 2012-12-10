@@ -76,7 +76,7 @@
 							CLIENT-SIDE
 						</li>
 						<li>
-							<a href="#chapter3"><i class="icon-chevron-right"></i> 3. DOM Manipulation</a>
+							<a href="#chapter3"><i class="icon-chevron-right"></i> 3. Presentation</a>
 						</li>
 						<li>
 							<a href="#chapter4"><i class="icon-chevron-right"></i> 4. Code Organization</a>
@@ -115,7 +115,7 @@
 							<a href="#chapter12"><i class="icon-chevron-right"></i> 12. Mobile and Desktop Apps</a>
 						</li>
 						<li>
-							<a href="#chapter13"><i class="icon-chevron-right"></i> 13. WebStandards</a>
+							<a href="#chapter13"><i class="icon-chevron-right"></i> 13. HTML5 APIs</a>
 						</li>
 					</ul>
 				</div>
@@ -207,14 +207,24 @@
 						<div class="well">
 							<a target="_blank" href="http://pltod.github.com/c3Patterns.html">Find here a presentation about patterns.</a>
 						</div>
+						TODO: May be some pattern classification<br/>
+						TODO: http://addyosmani.com/resources/essentialjsdesignpatterns/book/<br/>
+						TODO: http://addyosmani.com/blog/jquery-1-7s-callbacks-feature-demystified/<br/>
+						How the concepts of asynchronous programing, callbacks, deffered, promises will fit the picture of patterns<br/>
 						<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 					</section>	
 					<section id="chapter3">
 						<div class="page-header">
-							<h2>Chapter 3. DOM Manipulation</h2>
+							<h2>Chapter 3. Presentation</h2>
 						</div>
 						<div class="well">
-							TODO
+							TODO The role of JavaScript for presentation purposes. Suggested Content:<br/>
+							1. jQuery, MooTools etc. manipulating the DOM and styles <br/>
+							2. CSS related stuff <br/>
+							3. History - Responsive Web Design, Progressive Enhancement, Graceful degradation etc.<br/>
+							4. Tools like Twitter Bootstrap and the related common techniques for content presentation - tables, pagination, carusel etc.
+							5. Templating mechanisms.LinkedIn comparison could be a good starting point http://engineering.linkedin.com/frontend/client-side-templating-throwdown-mustache-handlebars-dustjs-and-more and
+							http://engineering.linkedin.com/frontend/leaving-jsps-dust-moving-linkedin-dustjs-client-side-templates<br/>
 						</div>
 						<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 					</section>	
@@ -223,7 +233,6 @@
 							<h2>Chapter 4. Code Organization</h2>
 						</div>
 						<h5 class="alert alert-info">1.	Why we end up having fat clients?</h5>
-						TODO: http://michaux.ca/articles/mvc-architecture-for-javascript-applications
 						<div class="well">
 							The software and the way we build it heavily depend on what the business needs.  
 							So if you need to understand why we build software in particular manner, just try to understand what are business needs. 
@@ -248,6 +257,9 @@
 							comparison between the most popular of them</a>. If you need to be aware about the available libraries and frameworks and have a hands 
 							on experience with them just check out <a href="http://addyosmani.github.com/todomvc/">TodoMVC project</a>.
 						</div>
+						TODO Suggested Content: <br/>
+						http://michaux.ca/articles/mvc-architecture-for-javascript-applications<br/>
+						http://addyosmani.github.com/backbone-fundamentals/ <br/>
 					</section>					
 					<section id="chapter5">
 						<div class="page-header">
@@ -315,7 +327,7 @@
 								The third option is to use full application architectures like <a target="_blank" href="http://emberjs.com/">Ember</a> or <a target="_blank" href="http://angularjs.org">AngularJS</a>
 							</dd>								
 						</div>
-						<h5 class="alert alert-info">2.	Library or Framework (Application Architectures)?</h5>
+						<h5 class="alert alert-info">2.	Library or Framework (Application Architecture)?</h5>
 						<div class="well">
 						Yes, there are a lot of choices. Which is the best one? Probably this question has no answer. 
 						Personally my reasoning is the following. Generally, it is safer to choose Backbone and postpone your more 
@@ -348,33 +360,103 @@ and <a target="_blank" href="http://addyosmani.github.com/aura/">Backbone Aura -
 						</div>
 						<h5 class="alert alert-info">4.	Server-agnosticism</h5>
 						<div class="well">
-Again Steven Sanderson is in the game. He used this term in 
+Steven Sanderson is in the game again. He used this term in 
 <a target="_blank" href="http://blog.stevensanderson.com/2012/08/01/rich-javascript-applications-the-seven-frameworks-throne-of-js-2012/">his comparison of top 7 libraries and frameworks</a>.
 The important note here is that these application libraries and frameworks (with some exceptions) does not have any explicit demands on server. You could use whatever server-side technology you want and keep its respective architecture practices.
-We were talking about application architectures in this chapter. But is there any server-side involved in all these talks? It is counter intuitive but the proper answer is ‘NO’. We were talking about client-side frameworks most of the time. Respectively the patterns and practices are applicable for client side code. 
+We were talking about application architectures in this chapter. But is there any server-side involved in all these talks? It is counter intuitive but the proper answer is ‘NO’. We were talking about client-side frameworks most of the time. Respectively the patterns and practices are applicable for client-side code. 
 <br/><br/>
 Some of the techniques involve the server in one way or another. This is especially true when we talk about routing, module and template loading. 
 If we go with Node.js and fully JavaScript based stack definitely all of the concepts are transferable to the server-side code. 
 Similar full stack JavaScript framework is <a target="_blank" href="http://www.meteor.com/">Meteor</a>, which involves not only the server (augmented Node.js) but also the database (mongoDB). 
 Personally I believe that this framework has a huge potential and will gain significant “market share” in the near future. 
 						</div>
-
+						TODO Suggested Content: <br/>
+						Framework comparison and aspects http://lostechies.com/derickbailey/2012/06/13/why-should-i-use-backbone-marionette-instead-of-%E2%80%A6/
+						<br/>
+						May be more detail discussion of some more architecture aspects like module loading, the most important patterns etc.<br/> 
+						<br />
+						See this seriesa as well - http://aaronhardy.com/javascript/javascript-architecture-the-basics/
 					</section>					
+					
+					<section id="chapter10">
+						<div class="page-header">
+							<h2>Chapter 10. Non-Functional Requirements</h2>
+						</div>
+						<div class="well">
+							TODO Suggested Content: <br/>
+							1. Performance <br/>
+							Very good article that makes you understand about the JS performance issues: http://blog.mrale.ph/post/12396216081/the-trap-of-the-performance-sweet-spot
+							Also note the comments section where the Mozilla strategy is defined.
+							<br/> 
+							This talk as well http://channel9.msdn.com/Events/Build/2012/4-000 <br/>
+							2. Security <br/>
+							3. Authentication 
+							
+							
+						</div>
+					</section>
 
 					<section id="chapter11">
 						<div class="page-header">
-							<h2>Chapter 12. Mobile and Desktop Apps</h2>
+							<h2>Chapter 11. Development Process</h2>
 						</div>
 						<div class="well">
-							<a href="blogPosts/mobileDev.html">JavaScript and Mobile Applications</a>
+							TODO Suggested Content: <br/>
+							1. Build tools like Grunt, Yeoman, Brunch. There was a nice comparison between them.<br/>
+							2. Testing - BDD, TDD, Mocha, Jasmine, JsTestDriver, Buster.<br/>
+							3. CI with Travis, etc.<br/>
+							4. Documenting javascript code
 						</div>
 					</section>
+
 					<section id="chapter12">
 						<div class="page-header">
-							<h2>Chapter 13. Web Standards</h2>
+							<h2>Chapter 12. Mobile and Desktop Apps</h2>
+						</div>
+						TODO Suggested Content: Rename this chapter to JavaScript Apps
+						and include info about mobile, desktop and third party JavaScript Applications
+						For third party see here: http://weblog.bocoup.com/third-party-javascript-development-future/ 
+						<div class="well">
+							The latest moves from the major vendors like Google and Microsoft allows JavaScript to be used for development of mobile and desktop applications as well.
+						</div>
+						<h5 class="alert alert-info">My Blog Posts</h5>
+<table class="table table-hover">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Blog Post</th>
+                  <th>Description</th>
+                </tr>
+              </thead>
+              <tbody>
+  				<tr>
+                  <td>1</td>
+                  <td><a href="../blogPosts/mobileDev.html">JavaScript and Mobile Applications</a></td>
+                  <td>Insigths from DevReach 2012 conference in Sofia, Bulgaria. Presents the role of JavaScript in development of mobile and desktop applications. Talks about mobile sites, types of mobile apps, hybrid 
+                  	mobile apps details, Microsoft WinJS and Google Pakaged Apps, and the convergence between web, mobile and desktop development</td>
+                </tr>              	
+              </tbody>
+            </table>		
+						
+					</section>
+					<section id="chapter13">
+						<div class="page-header">
+							<h2>Chapter 13. HTML5 APIs</h2>
 						</div>
 						<div class="well">
-							TODO
+							TODO. Suggested Content:<br/>
+							1. Different HTML5 APIs<br/>
+							2. HTML5 Boilerplate + Modernizr + Intializr <br/>
+							Resources:<br/>
+							http://www.netmagazine.com/features/developer-s-guide-html5-apis<br/>
+							http://www.html5rocks.com/en/<br/>
+							http://movethewebforward.org/<br/>
+							http://html5doctor.com/<br/>
+							http://docs.webplatform.org/wiki/Main_Page<br/>
+							http://html5test.com/<br/>
+							http://diveintohtml5.info/<br/>
+							http://html5please.com/<br/>
+							3.  Polyfillying browsers - missing HTML5 functionality with JavaScript http://addyosmani.com/polyfillthehtml5gaps/slides/#1
 						</div>
 					</section>
 					
