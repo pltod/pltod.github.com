@@ -2,16 +2,33 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
+
 		<title>JavaScript Learning</title>
-		<link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-		<link href='http://fonts.googleapis.com/css?family=Averia+Gruesa+Libre' rel='stylesheet' type='text/css'>
-		<link href='http://fonts.googleapis.com/css?family=Trocchi' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" href="css/reset.css">
-		<link rel="stylesheet" href="css/main.css">
-		<link rel="stylesheet" href="lib/zenburn.css">
+
+		<meta name="author" content="pltod">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
 	</head>
+		
+
 	<body>
-		<div id="reveal">
+		<div class="reveal">
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 				<section>
@@ -694,6 +711,7 @@ foo(); // 10
 				<span></span>
 			</div>
 		</div>
+		<script src="lib/js/head.min.js"></script>
 		<script src="js/reveal.js"></script>
 		<script src="lib/classList.js"></script>
 		<script src="lib/highlight.js"></script>
@@ -705,7 +723,7 @@ foo(); // 10
 			});
 			Reveal.initialize({
 				// Display controls in the bottom right corner
-				controls : true,
+				controls : false,
 
 				// Display a presentation progress bar
 				progress : true,
